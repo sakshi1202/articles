@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Encode Sans Semi Expanded', sans-serif!important;
+  line-height: 1.7!important;
+}
+.ck.ck-editor__editable_inline {
+  overflow-y: auto;
+  height: 50vh !important;
+}
