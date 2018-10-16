@@ -1,0 +1,24 @@
+<div>
+  <table class="table">
+    <thead>
+      <th scope="col">Id</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Gender</th>
+      <th scope="col">IP Address</th>
+      <th scope="col">Login</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.first_name}}</td>
+        <td>{{user.last_name}}</td>
+        <td>{{ user.email }}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.ip_address}}</td>
+        <td><button class="btn btn-primary" (click)="login(user.id)">Login</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
