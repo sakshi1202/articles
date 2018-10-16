@@ -1,0 +1,26 @@
+.card {
+  border-radius: 0px;
+
+  // box-shadow: 0 0 4px rgba($color: #bdbbbb, $alpha: 0.7);
+  transition: 0.3s ease-in;
+  border: none;
+  border-bottom: 1px solid  rgba($color: #007bff, $alpha: 0.2);
+  .card-header{
+    background: transparent;
+    text-transform: capitalize;
+    border-bottom: none;
+    color: #007bff;
+    font: bold;
+  }
+  .card-text {
+    color: rgba(0,0,0,0.6);
+  }
+  &:hover {
+    // box-shadow: 2px 2px 4px -1px rgba(189, 187, 187, 0.7);
+    transition: 0.3s ease-in;
+  }
+}
+.ck.ck-editor__editable_inline {
+  overflow-y: auto;
+  height: 50vh !important;
+}
