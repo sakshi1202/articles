@@ -5,10 +5,11 @@
 
     <div *ngFor="let article of articles" class="card">
       <h5 class="card-header">{{article.title}}
-        <button *ngIf="article.user_id == userId" type="button" class="btn btn-primary" data-toggle="modal" data-target="#editorModal"
-          (click)=edit(article)>
+        <span *ngIf="article.user_id == userId"  class="float-right"  data-target="#editorModal"
+        (click)=edit(article)  data-toggle="modal"><i class="far fa-edit"></i></span>
+        <!-- <button type="button" class="btn btn-primary">
          Edit
-        </button>
+        </button> -->
       </h5>
 
 
